@@ -1,0 +1,17 @@
+﻿@model HeyMeow.BookLibrary.Book
+
+@{
+    ViewData["Title"] = "Clear Library";
+}
+
+<h2>Clear Library</h2>
+
+<h3>This action will delete all entries in the library. Are you sure you want this?</h3>
+<div>
+    <hr />
+
+    <form asp-action="ClearList">
+        <input type="submit" value="Confirm Delete All" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

@@ -92,5 +92,66 @@ namespace BookManager.Controllers
                 return View();
             }
         }
+
+        public ActionResult GenPop()
+        {
+            _bookLib.GenPop();
+            
+            //var book1 = new Book
+            //{
+            //    Title = "Debt: The First 5,000 Years",
+            //    PublishDate = "12/09/2014",
+            //    Author = "David Graeber",
+            //    Catagory = "Nonfiction"
+            //};
+            //_bookLib.Add(book1);
+
+            //var book2 = new Book
+            //{
+            //    Title = "Why Nations Fail",
+            //    PublishDate = "03/20/2012",
+            //    Author = "Daron Acemoglu",
+            //    Catagory = "Nonfiction"
+            //};
+            //_bookLib.Add(book2);
+
+            //var book3 = new Book
+            //{
+            //    Title = "The Three-Body Problem",
+            //    PublishDate = "10/14/2014",
+            //    Author = "Liu Cixin",
+            //    Catagory = "Fiction"
+            //};
+            //_bookLib.Add(book3);
+
+            //var book4 = new Book
+            //{
+            //    Title = "A Scanner Darkly",
+            //    PublishDate = "08/17/1977",
+            //    Author = "Philip K. Dick",
+            //    Catagory = "Fiction"
+            //};
+            //_bookLib.Add(book4);
+
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult ClearListPrompt()
+        {
+            //_bookLib.DeleteAll();
+
+            //return RedirectToAction("Index");
+
+            return View();
+        }
+
+        public ActionResult ClearList()
+        {
+            _bookLib.DeleteAll();
+
+            return RedirectToAction("Index");
+
+            //return View();
+        }
     }
 }
