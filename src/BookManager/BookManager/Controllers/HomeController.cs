@@ -20,7 +20,7 @@ namespace BookManager.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "A remake of the CCA CarManager with added features.";
 
             return View();
         }

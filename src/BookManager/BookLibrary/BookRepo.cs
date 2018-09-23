@@ -43,11 +43,12 @@ namespace HeyMeow.BookLibrary
             _books.Remove(bookToDelete);
         }
 
-        //Haven't Tested
+        //Doesn't generate next Id
         public void GenPop()
         {
             var book1 = new Book
             {
+                Id = nextId++,
                 Title = "Debt: The First 5,000 Years",
                 PublishDate = "12/09/2014",
                 Author = "David Graeber",
@@ -57,6 +58,7 @@ namespace HeyMeow.BookLibrary
 
             var book2 = new Book
             {
+                Id = nextId++,
                 Title = "Why Nations Fail",
                 PublishDate = "03/20/2012",
                 Author = "Daron Acemoglu",
@@ -66,6 +68,7 @@ namespace HeyMeow.BookLibrary
 
             var book3 = new Book
             {
+                Id = nextId++,
                 Title = "The Three-Body Problem",
                 PublishDate = "10/14/2014",
                 Author = "Liu Cixin",
@@ -75,6 +78,7 @@ namespace HeyMeow.BookLibrary
 
             var book4 = new Book
             {
+                Id = nextId++,
                 Title = "A Scanner Darkly",
                 PublishDate = "08/17/1977",
                 Author = "Philip K. Dick",
